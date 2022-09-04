@@ -1,0 +1,42 @@
+ 
+ 
+ DOM - Document Object Model
+
+ es un conjunto de objetos anidados para crear un docuumento html o xml 
+ para tener acceso dinamico  asus elementos y manipularlos
+
+ Podemos manipular cada objeto atraves del DOM
+
+ Esto solo funciona en la web ya que el dom utiliza los archivos HTMAL
+
+ document.querySelector                                         recupera el primer elemento que yo le especifique
+ document.querySelectorAll                                      recupera todas las instancias posibles
+ document.querySelector('img').src                              regresa la ruta de la imagen
+ document.querySelector('img').src="path"                       cambia la imagen por una el archivo en el path
+ document.querySelector('small').innerText = 10                 cambia el texto de 0 a 10
+ document.querySelector('small').innerHTML = "<br>Hola</br>"    cambia la etiqueta a comandos HTML
+document.getElementById('')                                     retorna el elemnto dependiendo de su id
+
+#           busqueda de id
+.           busqueda de clases
+
+EJERCICIO
+
+document.querySelector('header').innerText='el Shuy'             Cambia el titulo
+
+
+const titulo = document.querySelector('header');                  De forma mas eficiente recomendado
+titulo.innerText='el Shuy' 
+
+
+creacion de elemntos que no existen en el HTML
+1.- se identifica el contenedor
+                      const divBotones = document.querySelector('#div-botones');
+2.- se crea el elemnto    
+                      const botonNuevo = document.createElement('button');
+3.- se inserta el boton creado en su contenedor   
+                      divBotones.append(botonNuevo)
+4.- se le agregan propiedades
+                      botonNuevo.innerText="destruir el mundo\n"            texto
+                      botonNuevo.classList.add('btn');                      se agrega la clase 'btn'
+                      botonNuevo.classList.add('btn-success');              se agrega la clase 'btn.success'

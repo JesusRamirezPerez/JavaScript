@@ -1,0 +1,58 @@
+# Carpetas a ignorar
+/.vscode
+/03-webpack-inicial
+/04-webpack.start
+/05-todo
+/06-promesas-callbacks
+/07-html
+/08-documentacion
+
+# /00-freecodecamo/docs
+
+# /03-webpack-inicial/dist
+# /03-webpack-inicial/node_modules
+
+# /05-todo/dist
+# /05-todo/node_modules
+
+# /06-promesas-callbacks/dist
+# /06-promesas-callbacks/node_modules
+
+# /08-documentacion/dist
+# /08-documentacion/node_modules
+
+# # Compiled output
+/dist
+/tmp
+/out-tsc
+/bazel-out
+
+# Node
+/node_modules
+npm-debug.log
+yarn-error.log
+
+# IDEs and editors
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# Miscellaneous
+/.angular/cache
+.sass-cache/
+/connect.lock
+/coverage
+/libpeerconnection.log
+testem.log

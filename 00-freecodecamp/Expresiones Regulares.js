@@ -1,3 +1,15 @@
+// 
+// Expresiones regulares, a veces acortadas a "regex" o "regexp", 
+// son patrones que ayudan a los programadores a encontrar, buscar, 
+// y reemplazar texto. Las expresiones regulares son muy potentes, 
+// pero pueden ser difícil de leer porque usan caracteres especiales 
+// para hacer coincidencias más complejas y flexibles.
+// 
+// En este curso, aprenderás como usar caracteres especiales, grupos 
+// de captura, miradas positivas y negativas, así como otras técnicas 
+// para hacer coincidir cualquier texto que quieras.
+// 
+// 
 // test busca una cadena dentro de una variable
 let testStr = "freeCodeCamp";           // variable string
 let testRegex = /Code/;                 // Exprecion regular

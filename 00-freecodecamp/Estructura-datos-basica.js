@@ -40,3 +40,5 @@ console.log(  arr.indexOf('Nuevo')  );
 arr.Object.keys()
 Map
 set
+.split
+.join

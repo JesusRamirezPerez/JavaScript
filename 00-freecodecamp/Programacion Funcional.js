@@ -19,3 +19,17 @@
 //         Funciones con efectos secundarios limitados:
 //              cualquier cambio o mutación en el estado del programa
 //              fuera de la función son cuidadosamente controlado
+
+// La variable global
+const bookList = ["The Hound of the Baskervilles", "On The Electrodynamics of Moving Bodies", "Philosophiæ Naturalis Principia Mathematica", "Disquisitiones Arithmeticae"];
+
+// Cambia el código debajo de esta línea
+function add(bookName) {
+  let atm = bookList.slice(0,bookList.length)
+  atm.push(bookName);
+  return atm;
+
+  // Cambia el código encima de esta línea
+}
+console.log(bookList)
+console.log(add('holas'))

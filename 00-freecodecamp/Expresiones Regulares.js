@@ -50,8 +50,49 @@ let myRegex13 = /\d/;                               // se agrega "\d"
 let myRegex14 = /[0-9]/;                            //busca todos los digitos
 let myRegex15 = /\D/;                               // se agrega "\D" (Mayuscula)
 
+// Busca todos los espacios en blanco
+let myRegex16 = /\s/g;                              // Busca los espacos en blanco \s
+
+// Busca todos los elemento que no sean espacios en blanco
+let myRegex17 = /\S/;                               // Busca todo lo que no sean espacios en blanco /S
+
+// Para especificar un rango de repeticiones se utiliza {}
+let myRegex18 = /a{3,5}h/;                          // Busca se coincide "a" de 3 a 5 veces en la cadena "ah"
+let myRegex19 = /a{3,}h/;                           // Busca se coincide "a" de 3 Veces en adelane dentro de la cadena "ah"
+let myRegex20 = /a{5}h/;                            // Busca se coincide "a" 5 veces en la cadena "ah"
+
+// Comprueba elementos opcionales  ?
+let myRegex21 = /colou?r/;                          // Comprueba la cadena colour en donde la "u" es opcional 
+
+// Un lookahead positivo buscará para asegurarse de que el elemento en el patrón de búsqueda este allí
+// (?= .....)
+let myRegex22 = /q(?=u)/;                           // busca que la cadena "qu" contenga una "u"
+
+// Un lookahead negativo buscará para asegurarse de que el elemento en el patrón de búsqueda no este allí.
+// (?! .....)
+let myRegex23 = /q(?!u)/;                           // busca que la cadena "qu" contenga una "u"
+
+// Agrupaciones mixtas de carcteres
+let myRegex24 = /P(engu|umpk)in/;                   // Busca si existe conicidencia como "Penguin" o "Pumpkin"
+
+// Grupos de captura
+// los grupos de captura es un conjunto de caracteres que complen una regla
+// se acomodan en parentesis "()" y se pueden acceder a ellos mediante un \1 donde el numero 
+// indica el grupo de captura
+let myRegex25 = /(?=\w{6})(?=\w*\d{2})/;            // 
+let myRegex26 = /^(\d+)\s\1\s\1$/;
+
 // para extraer los datos de un arreglo se utiliza match
 "Hello, World!".match(/Hello/);
 let ourStr = "Regular expressions";                //expecin regular
 let ourRegex = /expressions/;                      // Exprecion
 ourStr.match(ourRegex);                            // Regresa la exprecion encontrada
+
+// Buscar y reemplaar
+let wrongText = "The sky is silver.";
+let silverRegex = /silver/;
+wrongText.replace(silverRegex, "blue");            // Busca la exprecion regular y la reemplaza por una cadena
+
+// Se puede acceder a los grupos de captura con el simbolo "$"
+"Code Camp".replace(/(\w+)\s(\w+)/, '$2 $1');      // La llamada replace devolverá la cadena Camp Code.
+

@@ -6,6 +6,7 @@
 // let result = quoteSample.match(vowelRegex);
 // console.log(result);
 
+// *************************************************************
 
 // //
 // //    busca los caracteres que no son numeo ni vocal
@@ -15,6 +16,7 @@
 // let result = quoteSample.match(myRegex);
 // console.log(result);
 
+// *************************************************************
 
 //
 //  VALIDACION DE UN USUARIO
@@ -27,10 +29,10 @@
 // Los nombres de usuario deben tener al menos dos caracteres. 
 // Un nombre de usuario de dos caracteres sólo puede utilizar letras del alfabeto como caracteres.
 
-let username = "JackOfAllTrades";
-let userCheck = /^[a-z][a-z]+\d*$|^[a-z]\d\d+$/i;
-let result = userCheck.test(username);
-console.log(result)
+// let username = "JackOfAllTrades";
+// let userCheck = /^[a-z][a-z]+\d*$|^[a-z]\d\d+$/i;
+// let result = userCheck.test(username);
+// console.log(result)
 
 // Code Explanation
 //      ^           - start of input
@@ -41,3 +43,27 @@ console.log(result)
 //      ^[a-z]      - first character is a letter
 //      \d\d+       - following characters are 2 or more digits
 //      $           - end of input
+
+// *************************************************************
+
+// // Busca entre 3 y 6 caracteres y al menos un número:
+// let password = "abc123";
+// let checkPass = /(?=\w{3,6})(?=\D*\d)/;
+// console.log(checkPass.test(password));
+
+// *************************************************************
+
+// // Busca one two three
+// // y los remplaza por el orden three two one
+// let str = "one two three";
+// let fixRegex = /(one)\s(two)\s(three)/; // Cambia esta línea
+// let replaceText = "$3 $2 $1"; // Cambia esta línea
+// let result = str.replace(fixRegex, replaceText);
+// console.log(result);
+
+// *************************************************************
+
+let hello = "   Hello, World!  ";
+let wsRegex = /^\s+|\s+$/g; // Change this line
+let result = hello.replace(wsRegex, ""); // Change this line
+console.log(result)
